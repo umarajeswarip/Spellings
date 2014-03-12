@@ -1,0 +1,31 @@
+2014-03-12 01:07:13,661 - [INFO] - from play in pool-18-thread-5 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2014-03-12 01:07:20,672 - [INFO] - from application in play-internal-execution-context-1 
+ReactiveMongoPlugin starting...
+
+2014-03-12 01:07:20,678 - [INFO] - from application in play-internal-execution-context-1 
+ReactiveMongoPlugin successfully started with db 'spellings'! Servers:
+		[localhost:27017]
+
+2014-03-12 01:07:20,682 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2014-03-12 01:07:20,940 - [INFO] - from akka.event.slf4j.Slf4jLogger in play-akka.actor.default-dispatcher-6 
+Slf4jLogger started
+
+2014-03-12 01:07:21,112 - [INFO] - from application in play-akka.actor.default-dispatcher-6 
+request is GET /
+
+2014-03-12 01:07:21,118 - [INFO] - from application in play-akka.actor.default-dispatcher-6 
+query : BSONDocument(<non-empty>)
+
+2014-03-12 01:07:21,146 - [INFO] - from reactivemongo.core.actors.MongoDBSystem in reactivemongo-akka.actor.default-dispatcher-2 
+The node set is now available
+
+2014-03-12 01:07:21,146 - [INFO] - from reactivemongo.core.actors.MongoDBSystem in reactivemongo-akka.actor.default-dispatcher-2 
+The primary is now available
+
+2014-03-12 01:07:21,610 - [INFO] - from application in play-akka.actor.default-dispatcher-4 
+Checked index, result is Success(false)
+

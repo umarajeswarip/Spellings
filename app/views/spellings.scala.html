@@ -1,0 +1,48 @@
+@(spellings: List[models.Spelling], activeSort: String)
+@main("Welcome to Play 2.0") {
+<div id="sort">
+    <span>Sort by:</span>
+    <ul class="nav nav-pills">
+        <li @if(activeSort == "name"){class="active"}><a href="@routes.Spellings.index?sort=name">title</a></li>
+    </ul>
+</div>
+  <table>
+  <tr><td> <div id="source_select_div" class="source_pos">
+    <div class="span12">
+      <h2>Available Words</h2>
+      @if(spellings.isEmpty) {
+        <p>No articles available yet.</p>
+      } else {
+        <select id="source_select" multiple="multiple" size="20"/>
+        @spellings.map { spelling =>
+        @if( spelling.name != null) {
+            <option value="@spelling.name">@spelling.name</option>
+        }
+        }
+        </select>
+        </div>
+      </div>
+      </td>
+       <td>
+        <div id="button_div" class="but_pos">
+            <input id="button" type="button" value=">>" />
+        </div>
+        </td>
+        <td>
+        <div id="dest_select_div" class="dest_pos">
+            <h2>Words To Generate Fill in the blanks</h2>
+            <select id="dest_select" multiple="multiple" size="20">
+                </select>
+        </div>
+        </td></tr></table>
+    <div id="gen_button_div" class="gen_but_pos">
+        <input id="gen_button" type="button" value="Generate" />
+    </div>
+
+<div id="gen_output">
+</div>
+      }
+    </table>
+    </div>
+  </div>
+}
